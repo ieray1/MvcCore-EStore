@@ -1,0 +1,39 @@
+Proje: E-Ticaret Web Site Uygulaması
+Platform : Microsoft Asp.Net Core 
+
+Infrastructure:
+	- C#
+	- MVC
+	- Bootstrap / SASS
+	- JQuery
+
+Data Structure:
+	- Roles
+	- Users
+	- 	ShoppingCart
+	-	Orders
+	-		OrderItems (one to many)
+	- Brands
+	- Rayons
+	- 	Categories (one to many)
+	- 	Banner (zero or one to many)
+	- 	Products (many to many)
+	- 		ProductImages (one to many)
+	- 		ProductComments (one to many)
+	
+Features:
+- Product view history.	
+- Similar product suggestions
+- Related product suggestions
+
+N-Tier Artitecture (Çok katmanlı) 
+	- Database Access Layer (DAL) -> Model EF (DbContext)
+		* Class (method, property, ctor), Abstraction, Encapsulation, Inheritation
+	- Business Logic Layer (BLL) -> Controller
+		* Dependency Injection (design pattern)
+	- Presentation Layer (PL) -> View
+
+
+
+	Repository pattern
+	Singleton
